@@ -3,25 +3,33 @@ layout: default
 title: About moi 
 ---
 
-		<div class="about">
-			<h1>About</h1>
-			<p>I am a sociologist focusing on topics related to health and medicine, policy, and inequality. Last year, I received my Ph.D. in sociology from Columbia University. </p>
- <figure>
-	 <figure class="avatar">
-        <img src="avatar.png"   alt="avatar"/> 
+	<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        .about {
+            display: flex;
+            align-items: center;
+        }
+        .about img.avatar {
+            border-radius: 50%;
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Ensure the height matches the width for a perfect circle */
+            margin-right: 20px; /* Space between the image and the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <img src="avatar.png" alt="Avatar" class="avatar">
+        <div>
+            <h1>About</h1>
+            <p>I am a sociologist focusing on topics related to health and medicine, policy, and inequality. Last year, I received my Ph.D. in sociology from Columbia University.</p>
+        </div>
+    </div>
+</body>
+</html>
 
-    </figure>
-			
-			<figure class="avatar">
-    <img src="/avatar.png"> 
-         alt="avatar"/> 
-</figure>
 
-			
-			<ul class="contacts">
-				<li><a href="#">@TwitterHandle</a></li>
-				<li><a href="#">Your Departmental Webpage</a></li>
-				<li><a href="#">Another site you want to link to</a></li>
-				</ul>
-			
-		</div>
