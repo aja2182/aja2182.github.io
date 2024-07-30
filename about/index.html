@@ -7,11 +7,11 @@ title: About moi
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>About</title>
     <style>
         .about {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start */
             justify-content: space-between;
         }
         .about img.avatar {
@@ -19,6 +19,7 @@ title: About moi
             width: 100px; /* Adjust the size as needed */
             height: 100px; /* Ensure the height matches the width for a perfect circle */
             margin-left: 20px; /* Space between the image and the text */
+            margin-top: 20px; /* Lower the avatar */
         }
         .text-content {
             flex: 1;
