@@ -3,7 +3,7 @@ layout: default
 title: About moi 
 ---
 
-	<html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +12,26 @@ title: About moi
         .about {
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
         .about img.avatar {
             border-radius: 50%;
             width: 100px; /* Adjust the size as needed */
             height: 100px; /* Ensure the height matches the width for a perfect circle */
-            margin-right: 20px; /* Space between the image and the text */
+            margin-left: 20px; /* Space between the image and the text */
+        }
+        .text-content {
+            flex: 1;
         }
     </style>
 </head>
 <body>
     <div class="about">
-        <img src="avatar.png" alt="Avatar" class="avatar">
-        <div>
+        <div class="text-content">
             <h1>About</h1>
             <p>I am a sociologist focusing on topics related to health and medicine, policy, and inequality. Last year, I received my Ph.D. in sociology from Columbia University.</p>
         </div>
+        <img src="avatar.png" alt="Avatar" class="avatar">
     </div>
 </body>
 </html>
-
-
