@@ -81,4 +81,10 @@ ul.posts li {
     text-transform: uppercase;
 }
 
+@media(max-width:1023px){ 
+   /* your code will be here */
+   .navbar{
+        padding: 10px 15px;
+    }
+} 
 
