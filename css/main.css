@@ -1,6 +1,4 @@
 
-@media(max-width:1068px){ 
-   /* 
 body {
     margin: 40px auto;
     width: 70%;
@@ -84,9 +82,4 @@ ul.posts li {
     text-transform: uppercase;
 }
 
- */
-   .navbar{
-        padding: 10px 15px;
-    }
-} 
 
