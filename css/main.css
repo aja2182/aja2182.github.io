@@ -82,4 +82,13 @@ ul.posts li {
     text-transform: uppercase;
 }
 
+.cv p a {
+    color: #0366d6;
+    text-decoration: underline;
+}
+.cv p a:hover {
+    color: #0245a0;
+}
+
+
 
