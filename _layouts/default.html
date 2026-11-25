@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
     <meta charset="UTF-8">
@@ -14,14 +14,23 @@
       gtag('config', 'G-6186QB07PF');
     </script>
 
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">{% endif %}
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://aja2182.github.io{{ page.url }}">
-    <meta property="og:image" content="https://aja2182.github.io/about/josh-aleksanyan.jpg">
-    <link rel="canonical" href="https://aja2182.github.io{{ page.url }}">
+    {% assign page_description = page.description | default: site.description %}
+    {% assign canonical_url = page.canonical_url | default: page.url | absolute_url %}
+    {% assign social_image = page.image | default: "/about/josh-aleksanyan.jpg" | absolute_url %}
+    <title>{{ page.title | escape }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <meta property="og:site_name" content="Josh Aleksanyan">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:type" content="{{ page.og_type | default: 'website' | escape }}">
+    <meta property="og:url" content="{{ canonical_url | escape }}">
+    <meta property="og:image" content="{{ social_image | escape }}">
+    <meta property="og:image:alt" content="Portrait of Josh Aleksanyan">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="{{ page_description | escape }}">
+    <meta name="twitter:image" content="{{ social_image | escape }}">
+    <link rel="canonical" href="{{ canonical_url | escape }}">
 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
@@ -31,9 +40,10 @@
     <nav>
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/cv">CV</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/projects/">Projects</a></li>
+<li><a href="/cv/">CV</a></li>
+<li><a href="/media/">Media</a></li>
 </ul>
     </nav>
 <div class="container">
