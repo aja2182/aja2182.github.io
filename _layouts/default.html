@@ -15,6 +15,13 @@
     </script>
 
     <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">{% endif %}
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://aja2182.github.io{{ page.url }}">
+    <meta property="og:image" content="https://aja2182.github.io/about/josh-aleksanyan.jpg">
+    <link rel="canonical" href="https://aja2182.github.io{{ page.url }}">
 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
